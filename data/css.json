@@ -383,5 +383,17 @@
       "discord": "https://discord.com/users/1049005256740180088",
       "label": "",
       "downloadUrl": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-files/rune%20clan.css"
+    },
+    {
+      "title": "cozy grey",
+      "description": "grey theme css with an cozy layout and clean ingame hud",
+      "homeImage": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-imgs/cozygrey.png",
+      "ingameImage": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-imgs/cozygrey_game.png",
+      "tags": ["Grey", "Cozy", "Clean"],
+      "availability": "free",
+      "owner": "ONE PRO",
+      "discord": "https://discord.com/users/1049005256740180088",
+      "label": "",
+      "downloadUrl": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-files/cozygrey.css"
     }
   ]
