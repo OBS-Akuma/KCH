@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Compass
 // @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  on screen compass
+// @version      1.1
+// @description  On-screen compass
 // @author       imnotkoolkid
 // @match        https://kirka.io/*
 // @grant        none
@@ -116,30 +116,20 @@
         };
 
         function hookWebGL(gl) {
-            const origGetUniformLocation = gl.getUniformLocation;
-            const uniformLocMap = new WeakMap();
-
-            gl.getUniformLocation = function (program, name) {
-                const loc = origGetUniformLocation.apply(this, arguments);
-                if (loc) {
-                    if (name === 'wmnNwWMW' || name === 'modelViewMatrix' || name === 'matrix_modelView') {
-                        uniformLocMap.set(loc, 'modelViewMatrix');
-                    }
-                }
-                return loc;
-            };
-
             const origUniformMatrix4fv = gl.uniformMatrix4fv;
-            gl.uniformMatrix4fv = function (loc, transpose, v) {
-                if (v && v.length === 16 && uniformLocMap.has(loc)) {
-                    const sX = Math.sqrt(v[0] ** 2 + v[1] ** 2 + v[2] ** 2);
-                    if (Math.abs(sX - 1.0) < 0.05) {
-                        let fwdX = -v[8];
-                        let fwdZ = -v[10];
 
-                        if (fwdX !== 0 || fwdZ !== 0) {
-                            let yaw = Math.atan2(fwdX, fwdZ) * (180 / Math.PI);
-                            currentYaw = yaw;
+            gl.uniformMatrix4fv = function (loc, transpose, v) {
+                if (v && v.length === 16) {
+                    if (Math.abs(v[15] - 1.0) < 0.01) {
+                        const sX = Math.sqrt(v[0] ** 2 + v[1] ** 2 + v[2] ** 2);
+
+                        if (Math.abs(sX - 1.0) < 0.05) {
+                            let fwdX = -v[8];
+                            let fwdZ = -v[10];
+
+                            if (Math.abs(fwdX) > 0.001 || Math.abs(fwdZ) > 0.001) {
+                                currentYaw = Math.atan2(fwdX, fwdZ) * (180 / Math.PI);
+                            }
                         }
                     }
                 }
