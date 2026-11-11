@@ -41,14 +41,6 @@
       "previewImage": ""
     },
     {
-      "name": "esc menu bypass",
-      "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/scripts/esc-menu-bypass.js",
-      "owner": "imnotkoolkid",
-      "discord": "",
-      "description": "removes 3sec timer in esc menu",
-      "previewImage": ""
-    },
-    {
       "name": "Clock",
       "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/scripts/clock.js",
       "owner": "unknown",
