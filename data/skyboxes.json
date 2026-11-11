@@ -157,27 +157,27 @@
             "images": [
                 {
                     "name": "up",
-                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/up.jpg"
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/Up.png"
                 },
                 {
                     "name": "down",
-                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/down.jpg"
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/Down.png"
                 },
                 {
                     "name": "back",
-                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/back.jpg"
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/Back.png"
                 },
                 {
                     "name": "front",
-                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/front.jpg"
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/Front.png"
                 },
                 {
                     "name": "right",
-                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/right.jpg"
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/Right.png"
                 },
                 {
                     "name": "left",
-                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/left.jpg"
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/Left.png"
                 }
             ]
         }
