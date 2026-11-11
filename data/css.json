@@ -301,6 +301,18 @@
       "downloadUrl": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-files/tokyo%20ghoul.css"
     },
     {
+      "title": "halloween monochrome",
+      "description": "dark monochrome halloween theme with a clean layout and ingame hud",
+      "homeImage": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-imgs/halloween%20monochrome.png",
+      "ingameImage": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-imgs/halloween%20monochrome_ingame.png",
+      "tags": ["Halloween", "Monochrome", "Dark"],
+      "availability": "free",
+      "owner": "ONE PRO",
+      "discord": "https://discord.com/users/1049005256740180088",
+      "label": "",
+      "downloadUrl": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-files/halloween%20monochrome.css"
+    },
+    {
       "title": "At The Beach",
       "description": "Warm and Chill anime css ",
       "homeImage": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/css-imgs/at%20the%20beach.webp",
