@@ -147,6 +147,39 @@
                     "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/redblack/left.jpg"
                 }
             ]
+        },
+        {
+            "id": "skybox_pack5",
+            "name": "volcanicisland",
+            "owner": "SniperGecko",
+            "discord": "Snipergecko",
+            "isPack": true,
+            "images": [
+                {
+                    "name": "up",
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/up.jpg"
+                },
+                {
+                    "name": "down",
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/down.jpg"
+                },
+                {
+                    "name": "back",
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/back.jpg"
+                },
+                {
+                    "name": "front",
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/front.jpg"
+                },
+                {
+                    "name": "right",
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/right.jpg"
+                },
+                {
+                    "name": "left",
+                    "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/skyboxs/volcanicisland/left.jpg"
+                }
+            ]
         }
     ]
 }
