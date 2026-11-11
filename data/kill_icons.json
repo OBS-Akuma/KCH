@@ -48,6 +48,48 @@
       "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/kill%20icons/kill_icon7.webp",
       "owner": "Unknown",
       "discord": ""
+    },
+    {
+      "id": "kill_icon8",
+      "name": "magepunk_emblem",
+      "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/kill%20icons/magepunk_emblem.png",
+      "owner": "Uploaded by Akuma",
+      "discord": "console.dev"
+    },
+    {
+      "id": "kill_icon9",
+      "name": "doombringer_emblem",
+      "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/kill%20icons/doombringer_emblem.png",
+      "owner": "Uploaded by Akuma",
+      "discord": ""
+    },
+    {
+      "id": "kill_icon10",
+      "name": "Default_Emblem_MA",
+      "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/kill%20icons/Default_Emblem_MA.png",
+      "owner": "Unknown",
+      "discord": "console.dev"
+    },
+    {
+      "id": "kill_icon11",
+      "name": "singularity_emblem",
+      "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/kill%20icons/singularity_emblem.png",
+      "owner": "Uploaded by Akuma",
+      "discord": "console.dev"
+    },
+    {
+      "id": "kill_icon12",
+      "name": "protocol781-a_emblem",
+      "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/kill%20icons/protocol781-a_emblem.png",
+      "owner": "Uploaded by Akuma",
+      "discord": "console.dev"
+    },
+    {
+      "id": "kill_icon13",
+      "name": "Champions_2025_Emblem",
+      "url": "https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/resources/kill%20icons/Champions_2025_Emblem.png",
+      "owner": "Uploaded by Akuma",
+      "discord": "console.dev"
     }
   ]
 }
