@@ -16,7 +16,7 @@
     "description": "Electron client for Kirka.io",
     "platforms": ["Windows", "macOS", "Linux"],
     "source": "open source",
-    "development": "active",
+    "development": "inactive",
     "downloadUrl": "https://github.com/zVipexx/dawn-client/releases"
   },
   {
@@ -58,6 +58,16 @@
     "source": "open source",
     "development": "active",
     "downloadUrl": "https://github.com/OBS-Akuma/smudgy-client/releases"
+  },
+  {
+    "name": "Helium Client",
+    "owner": "zVipexx",
+    "icon": "https://raw.githubusercontent.com/zVipexx/helium-client/refs/heads/main/src/assets/img/icon.png",
+    "description": "competitive client for Kirka.io",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "source": "open source",
+    "development": "active",
+    "downloadUrl": "https://github.com/zVipexx/helium-client/releases/"
   },
   {
     "name": "Aero Client",
