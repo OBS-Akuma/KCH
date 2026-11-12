@@ -20,6 +20,16 @@
     "downloadUrl": "https://github.com/zVipexx/dawn-client/releases"
   },
   {
+    "name": "Hydrogen Client",
+    "owner": "Akuma",
+    "icon": "https://raw.githubusercontent.com/OBS-Akuma/Ubuntu-client/refs/heads/main/assets/H1K.png",
+    "description": "As a name suggests its lightweight",
+    "platforms": ["Windows", "macOS", "Linux"],
+    "source": "open source",
+    "development": "In-dev",
+    "downloadUrl": "https://www.yxzoi.xyz/Ubuntu"
+  },
+  {
     "name": "Celeste Client",
     "owner": "imnotkoolkid",
     "icon": "https://raw.githubusercontent.com/imnotkoolkid/celeste-client/refs/heads/main/src/assets/img/icon.png",
