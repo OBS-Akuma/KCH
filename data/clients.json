@@ -82,7 +82,7 @@
   {
     "name": "Aero Client",
     "owner": "daymian",
-    "icon": "",
+    "icon": "https://aeroclient.xyz/img/aeroIcon.png",
     "description": "Tauri client for Kirka.io",
     "platforms": ["Windows", "Linux"],
     "source": "closed source",
