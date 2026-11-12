@@ -1,5 +1,4 @@
 (function() {
-    
   lucide.createIcons();
 
   const hamburger = document.getElementById('hamburger');
@@ -139,7 +138,6 @@
       const centerName = document.getElementById('clientCenterName');
       if (!grid || !centerName) return;
 
-      // only show clients that actually have an icon
       const clients = data.filter(c => c && c.name && c.icon && c.icon.trim() !== '');
       if (!clients.length) return;
 
@@ -169,7 +167,6 @@
           node.classList.remove('active');
         });
 
-        // click opens the download/release page in a new tab
         if (client.downloadUrl) {
           node.addEventListener('click', () => {
             window.open(client.downloadUrl, '_blank', 'noopener');
@@ -181,6 +178,69 @@
     })
     .catch(e => console.error('Error loading clients data:', e));
 
+  fetch('https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/data/css.json')
+    .then(r => r.json())
+    .then(d => {
+      const s = document.getElementById('css-image-slider');
+      if (!s) return;
+
+      const t = d.filter(i => i && i.homeImage);
+      if (!t.length) return;
+
+      s.innerHTML = '<div class="loader"></div>';
+      const loader = s.querySelector('.loader');
+      const l = {};
+      let c = 0, iT = false;
+
+      function loadSequentially(index) {
+        if (index >= t.length) return;
+        const im = document.createElement('img');
+        im.src = t[index].homeImage;
+        im.alt = t[index].title || 'Theme Preview';
+        im.className = 'slider-image';
+        if (index === 0) im.classList.add('active');
+        im.onload = () => {
+          l[index] = true;
+          if (index === 0 && loader) loader.style.display = 'none';
+          loadSequentially(index + 1);
+        };
+        im.onerror = () => {
+          l[index] = true;
+          loadSequentially(index + 1);
+        };
+        s.appendChild(im);
+      }
+
+      loadSequentially(0);
+
+      function next() {
+        if (iT || t.length < 2) return;
+        const n = (c + 1) % t.length;
+        if (!l[n]) {
+          const int = setInterval(() => { if (l[n]) { clearInterval(int); trans(n); } }, 200);
+        } else {
+          trans(n);
+        }
+      }
+
+      function trans(n) {
+        iT = true;
+        const ims = s.querySelectorAll('.slider-image');
+        ims[c].classList.add('slide-out');
+        ims[n].classList.add('slide-in');
+        setTimeout(() => {
+          ims[c].classList.remove('active', 'slide-out');
+          ims[n].classList.add('active');
+          ims[n].classList.remove('slide-in');
+          c = n;
+          iT = false;
+        }, 800);
+      }
+
+      setInterval(next, 4000);
+    })
+    .catch(e => console.error('Error loading CSS data:', e));
+
   const BLOCKED_IMG_PREFIX = 'https://i.pinimg.com/736x/a1/cd/44/a1cd44f6617beebb9794877ef59082a1.jpg';
 
   fetch('https://raw.githubusercontent.com/imnotkoolkid/KCH/refs/heads/main/data/maps.json')
@@ -188,7 +248,7 @@
     .then(d => {
       const s = document.getElementById('map-image-slider');
       if (!s) return;
-        
+
       const seen = new Set();
       const t = d.filter(i => {
         if (!i || !i.img) return false;
