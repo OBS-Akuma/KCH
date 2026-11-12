@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="src/index.css">
 </head>
 <body>
-  <!-- HEADER -->
   <header id="header">
     <div class="header-container">
       <a href="#" class="logo">
@@ -33,7 +32,6 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <div class="hero-wrapper">
       <div class="container hero">
         <img src="assets/icon.png" alt="Logo" class="hero-logo-large">
@@ -46,10 +44,7 @@
       </div>
     </div>
 
-    <!-- MAIN CONTENT CONTAINER -->
     <div class="container">
-
-      <!-- CSS SECTION -->
       <section class="feature-section" id="customizations">
         <div class="feature-text">
           <h2>CSS</h2>
@@ -65,7 +60,6 @@
         </div>
       </section>
 
-      <!-- CROSSHAIRS -->
       <section class="feature-section reverse">
         <div class="feature-text">
           <h2>Crosshairs</h2>
@@ -82,7 +76,6 @@
         </div>
       </section>
 
-      <!-- TEXTURES -->
       <section class="feature-section">
         <div class="feature-text">
           <h2>Textures</h2>
@@ -99,7 +92,6 @@
         </div>
       </section>
 
-      <!-- ASSET LIBRARY -->
       <section class="feature-section reverse">
         <div class="feature-text">
           <h2>Asset Library</h2>
@@ -116,7 +108,6 @@
         </div>
       </section>
 
-      <!-- TOOLS & RESOURCES (NO TILT) -->
       <section class="feature-section" id="apps">
         <div class="feature-text">
           <h2>Tools & Resources</h2>
@@ -175,13 +166,24 @@
                     <div class="mock-stats"><span><i data-lucide="external-link"></i> Open Tool</span></div>
                   </div>
                 </a>
+                <a href="https://www.ab4core.com/" class="mock-list-item" target="_blank" rel="noopener noreferrer">
+                  <div class="mock-icon">
+                    <img src="https://www.ab4core.com/icon-1024.png" alt="Ab4core"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <i data-lucide="globe" style="color:var(--mod-green); display:none;"></i>
+                  </div>
+                  <div class="mock-info">
+                    <h4>Ab4core</h4>
+                    <p>a hub for uploading and downloading kirka maps</p>
+                    <div class="mock-stats"><span><i data-lucide="external-link"></i> Open Tool</span></div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- KIRKA CLIENTS (dynamic from clients.json) -->
       <section class="feature-section reverse" id="clients">
         <div class="feature-text">
           <h2>Kirka Clients</h2>
@@ -191,14 +193,11 @@
         <div class="feature-visual" style="background:transparent; border:none; overflow:visible;">
           <div class="client-grid-wrap">
             <div class="client-grid-name" id="clientCenterName"></div>
-            <div class="client-grid" id="clientGrid">
-              <!-- nodes injected by JS -->
-            </div>
+            <div class="client-grid" id="clientGrid"></div>
           </div>
         </div>
       </section>
 
-      <!-- MAPS (slideshow - slides like CSS card) -->
       <section class="feature-section" id="maps">
         <div class="feature-text">
           <h2>Maps</h2>
@@ -214,7 +213,6 @@
         </div>
       </section>
 
-      <!-- SOCIAL SECTION -->
       <section id="social">
         <div class="grid-section-title">
           <h2>Social</h2>
@@ -234,7 +232,6 @@
         </div>
       </section>
 
-      <!-- FAQ SECTION -->
       <section id="faqs" class="faq-section">
         <div class="grid-section-title">
           <h2>Frequently Asked Questions</h2>
@@ -280,10 +277,9 @@
           </div>
         </div>
       </section>
-    </div><!-- end container -->
+    </div>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container footer-content">
       <div>
