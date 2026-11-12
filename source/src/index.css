@@ -1,4 +1,3 @@
-/* ----- GLOBAL RESET & VARIABLES ----- */
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +44,6 @@ a {
   padding: 0 24px;
 }
 
-/* ----- HEADER ----- */
 header {
   position: fixed;
   top: 10px;
@@ -117,7 +115,6 @@ header {
   transition: 0.3s;
 }
 
-/* ----- HERO SECTION ----- */
 .hero-wrapper {
   background:
     radial-gradient(circle at 50% 20%, rgba(27, 217, 106, 0.1) 0%, var(--mod-bg) 95%),
@@ -187,7 +184,6 @@ header {
   flex-wrap: wrap;
 }
 
-/* ----- BUTTONS ----- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -203,8 +199,17 @@ header {
   white-space: nowrap;
 }
 
-.btn i {
-  font-size: 0.9em;
+.btn i,
+.btn svg {
+  transition: transform 0.25s ease;
+}
+
+.btn svg.lucide-chevron-right {
+  transform: rotate(90deg);
+}
+
+.btn:hover svg.lucide-chevron-right {
+  transform: rotate(0deg);
 }
 
 .btn-primary {
@@ -231,7 +236,6 @@ header {
   background-color: rgba(22, 181, 70, 0.2);
 }
 
-/* ----- FEATURE SECTIONS ----- */
 .feature-section {
   display: flex;
   align-items: center;
@@ -262,7 +266,6 @@ header {
   margin-bottom: 24px;
 }
 
-/* ----- 3D TILT CARD ----- */
 .feature-visual {
   flex: 1 1 300px;
   background: var(--mod-card-bg);
@@ -338,7 +341,6 @@ header {
   display: none;
 }
 
-/* ----- SLIDESHOW IMAGES ----- */
 .slider-image {
   position: absolute;
   inset: 0;
@@ -376,7 +378,6 @@ header {
   z-index: 2;
 }
 
-/* mock window for tools */
 .mock-window {
   background: transparent;
   border: 1px solid var(--mod-card-border);
@@ -451,7 +452,6 @@ header {
   gap: 4px;
 }
 
-/* ----- CLIENT GRID (no bg, no tilt, no glow) ----- */
 .client-grid-wrap {
   width: 100%;
   position: relative;
@@ -519,7 +519,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* ----- SOCIAL BANNER ----- */
 .launcher-banner {
   background: var(--mod-card-bg);
   border: 1px solid var(--mod-card-border);
@@ -561,7 +560,6 @@ header {
   font-size: 6rem !important;
 }
 
-/* ----- FAQ SECTION ----- */
 .faq-section {
   padding: 40px 0 80px;
 }
@@ -628,7 +626,6 @@ header {
   color: var(--mod-green);
 }
 
-/* ----- FOOTER ----- */
 footer {
   background: #050608;
   padding: 60px 0 30px;
@@ -687,7 +684,6 @@ footer {
   text-decoration: underline;
 }
 
-/* ----- UTILITIES / TWEAKS ----- */
 .grid-section-title {
   text-align: center;
   margin-bottom: 30px;
@@ -702,7 +698,6 @@ footer {
   perspective: 600px;
 }
 
-/* responsive */
 @media (max-width: 768px) {
   .feature-section,
   .feature-section.reverse {
